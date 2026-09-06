@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  font-family: rajdhani;
+}
+
+.header {
+  height: 70px;
+  width: 60%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 40px;
+  border: 1px solid rgba(87, 86, 86, 0.158);
+  margin-top: 20px;
+  margin-bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+
+@font-face {
+  font-family: "cyber";
+  src: url("./fonts/Dune_Rise.otf");
+}
+
+.logo a {
+  font-size: 18px;
+  color: rgba(244, 246, 246, 0.594);
+  font-weight: bold;
+  font-family: "cyber";
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  grid-column: 2;
+  justify-self: center;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.605);
+  font-size: 19px;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 255, 254);
+  transform: scale(1.1);
+}
+
+.headerbtn {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  margin-right: 25px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.599);
+  grid-column: 3;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.headerbtn:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.hero {
+  padding-top: 120px;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(8, 36, 84, 0.254);
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -999999;
+  pointer-events: none;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  align-items: start;
+  margin-top: 100px;
+  margin-left: 60px;
+
+  min-height: 580px;
+  max-width: 600px;
+
+  background-color: rgba(0, 0, 0, 0.015);
+  backdrop-filter: blur(40px);
+  border-radius: 35px;
+  color: white;
+  z-index: -1;
+}
+
+.brand-name {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 75px;
+  font-weight: 100;
+}
+
+.hero span {
+  font-weight: bold;
+}
+
+.slogan {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.btnhero {
+  display: flex;
+  height: 60px;
+  width: 85%;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(252, 252, 252);
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.554);
+  border-radius: 30px;
+
+  transition: color 0.4s ease;
+}
+
+.btnhero:hover {
+  color: rgb(255, 255, 255);
+}
+
+.androids {
+ 
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  background-color: #8ca6bd;
+}
+
+.title2 {
+  padding: 30px 70px;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  margin-left: 0;
+
+}
+
+.title2 h2 {
+  font-size: 120px;
+  font-family: rajdhani;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.534);
+  line-height: 0.9;
+  margin-bottom: 10px;
+}
+
+.title2 p {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.585);
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 100%;
+ padding: 50px 200px;
+ justify-content: space-between;
+ 
+}
+.andoid-cards{
+  height: 550px;
+  width: 460px;
+  background-color: white;
+}
+
+.andoid-cards img{
+  height: 250px;
+  width: 460px;
+}

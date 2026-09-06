@@ -42,10 +42,11 @@
 }
 
 .logo a {
-  font-size: 18px;
-  color: rgba(244, 246, 246, 0.594);
-  font-weight: bold;
-  font-family: "cyber";
+  font-size: 20px;
+  color: rgba(244, 246, 246, 0.797);
+  font-weight: 300;
+  font-family: rajdhani;
+  letter-spacing: 7px;
 }
 
 .nav-links {

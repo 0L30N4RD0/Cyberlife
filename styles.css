@@ -9,6 +9,10 @@
   font-family: rajdhani;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   height: 70px;
   width: 60%;
@@ -42,7 +46,7 @@
 }
 
 .logo a {
-  font-size: 20px;
+  font-size: 22px;
   color: rgba(244, 246, 246, 0.797);
   font-weight: 300;
   font-family: rajdhani;
@@ -163,25 +167,48 @@
   align-items: center;
   justify-content: center;
 
-  color: rgb(252, 252, 252);
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid rgba(255, 255, 255, 0.554);
-  border-radius: 30px;
+  border-radius: 1000px;
+  border: 1px solid white;
+}
 
-  transition: color 0.4s ease;
+.btnhero a {
+  text-decoration: none;
+  color: white;
 }
 
 .btnhero:hover {
   color: rgb(255, 255, 255);
 }
 
-.androids {
- 
+#androids {
+  position: relative;
   justify-content: center;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  background-color: #8ca6bd;
+  background-color: #0c2141;
+}
+
+#androids::before {
+  content: "";
+  border: none;
+  top: -300px;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(12, 33, 65, 0) 0%,
+    rgba(12, 33, 65, 0.03) 20%,
+    rgba(12, 33, 65, 0.08) 35%,
+    rgba(12, 33, 65, 0.18) 50%,
+    rgba(12, 33, 65, 0.35) 65%,
+    rgba(12, 33, 65, 0.58) 79%,
+    rgba(12, 33, 65, 0.8) 90%,
+    #0c2141 100%
+  );
+  height: 300px;
+  width: 100%;
+  position: absolute;
 }
 
 .title2 {
@@ -190,14 +217,13 @@
   height: 250px;
   width: 100%;
   margin-left: 0;
-
 }
 
 .title2 h2 {
   font-size: 120px;
   font-family: rajdhani;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.534);
+  color: rgba(255, 255, 255, 0.611);
   line-height: 0.9;
   margin-bottom: 10px;
 }
@@ -207,22 +233,114 @@
   color: rgba(255, 255, 255, 0.585);
 }
 
-.cards{
+.cards {
   display: flex;
   flex-direction: row;
+  gap: 50px;
   height: 60vh;
   width: 100%;
- padding: 50px 200px;
- justify-content: space-between;
- 
+  padding: 50px 57px;
+  justify-content: space-between;
 }
-.andoid-cards{
-  height: 550px;
-  width: 460px;
+.android-cards {
+  height: 400px;
+  width: 600px;
+  background-color: #011d38;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  border: 1.5px solid rgba(140, 185, 253, 0.506);
+}
+
+.android-cards img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 25px 25px;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.model-name {
+  color: rgba(255, 255, 255, 0.894);
+  font-size: 23px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  text-decoration: underline;
+  text-decoration-color: #8ec7fd;
+}
+
+.android-cards h3 {
+  position: absolute;
+  top: 320px;
+  left: 25px;
+
+  color: rgba(255, 255, 255, 0.782);
+  font-size: 30px;
+  letter-spacing: 7px;
+  text-decoration: underline;
+  text-decoration-color: #4586c3;
+  text-underline-offset: 8px;
+}
+
+.model-description {
+  position: absolute;
+  left: 25px;
+  top: 365px;
+  color: rgba(171, 173, 173, 0.853);
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+
+  backdrop-filter: blur(15px);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 57%,
+    black 75%,
+    black 100%
+  );
+}
+
+.connor-presentation{
+  height: 100vh;
+  width: 100%;
   background-color: white;
 }
 
-.andoid-cards img{
-  height: 250px;
-  width: 460px;
+.connor-presentation img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.kara-presentioatn{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.kara-presentation img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.markus-presentation{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.markus-presentation img{
+height: 100%;
+width: 100%;
+object-fit: cover;
 }

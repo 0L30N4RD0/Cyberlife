@@ -304,34 +304,3 @@ html {
   );
 }
 
-.connor-presentation {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-}
-
-.connor-presentation img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.connor-presentation div {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px;
-  align-items: start;
-
-  top: 250px;
-  left: 155px;
-  height: 500px;
-  width: 500px;
-
-  background-color: rgba(0, 0, 0, 0.015);
-  backdrop-filter: blur(40px);
-  border-radius: 35px;
-  color: white;
-}
